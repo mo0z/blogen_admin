@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blogen Admin Area</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-3" href="index.html">Blogen</a>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2"><a class="nav-link" href="index.html">Dashboard</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="posts.html">Posts</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="users.html">Users</a></li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="li nav-item dropdown mr-3">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                <i class="fa fa-user">
+                </i> Welcome Brad
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="profile.html">
+                  <i class="fa fa-user-circle"></i> Profile
+                </a>
+                <a class="dropdown-item" href="settings.html">
+                  <i class="fa fa-gear"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><i class="fa fa-user-times"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="main-header" class="py-2 bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Post One</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ACTION -->
+    <section id="actions" class="py-4 mb-4 bg-faded">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mr-auto"><a class="btn btn-secondary btn-block" href="index.html"><i class="fa fa-arrow-left"></i> Back To Dashboard</a></div>
+          <div class="col-md-3"><a class="btn btn-success btn-block" href="index.html"><i class="fa fa-check"></i> Save Changes</a></div>
+          <div class="col-md-3"><a class="btn btn-danger btn-block" href="index.html"><i class="fa fa-remove"></i> Delete Post</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS EDIT -->
+    <section id="edit-posts">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h4>Edit Post</h4>
+              </div>
+              <div class="card-block">
+            <form action="">
+              <div class="form-group">
+                <label class="form-control-label" for="title">Title</label>
+                <input class="form-control" type="text" value="Post One">
+              </div>
+              <div class="form-group">
+                <label class="form-control-label" for="category">Category</label>
+                <select class="form-control">
+                  <option value="">Web Development</option>
+                  <option value="">Tech Gadget</option>
+                  <option value="">Business</option>
+                  <option value="">Health & Wellness</option>
+                </select>
+              </div>
+              <div class="form-group bg-faded p-3">
+                <label for="file">Image Uploaded</label>
+                <input id="file" class="form-control-file" type="file">
+                <small id="fileHelp" class="form-text text-muted">Max Size 3MB</small>
+              </div>
+              <div class="form-group">
+                <label for="body">Body</label>
+                <textarea class="form-control" name="editor1">Amet expedita sint asperiores modi vero. Atque autem quos eum ratione molestias. Vero molestiae sint aliquam commodi modi vero? Repellat modi veritatis tempora delectus quia soluta suscipit! Earum eos velit minus id quo voluptatum Natus ad hic quisquam repellat consequuntur.</textarea>
+              </div>
+            </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="bg-inverse text-white mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">Copyright &copy; 2017 Blogen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.7.2/basic/ckeditor.js"></script>
+    <script>
+CKEDITOR.replace('editor1');
+    </script>
+  </body>
+</html>
+
